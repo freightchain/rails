@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  host: localhost
+  username: reid
+  password: password
+  port: 5432
+
+development:
+  <<: *default
+  database: freight-chain_dev
+
+test:
+  <<: *default
+  database: freight-chain_test
