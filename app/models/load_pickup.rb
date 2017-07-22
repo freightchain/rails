@@ -1,5 +1,7 @@
 class LoadPickup
   include Blockchainable
+  include Her::Model
+  collection_path 'api/LoadPickup'
 
   def self.chain_klass
     "com.loadblockchain.LoadPickup"

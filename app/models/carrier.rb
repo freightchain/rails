@@ -1,5 +1,8 @@
 class Carrier
   include Blockchainable
+  include Her::Model
+  collection_path 'api/Carrier'
+  primary_key :carrierId
 
   def self.chain_klass
     "com.loadblockchain.Carrier"

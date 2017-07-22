@@ -1,5 +1,8 @@
 class Broker
   include Blockchainable
+  include Her::Model
+  collection_path 'api/Broker'
+  primary_key :brokerId
 
   def self.chain_klass
     "com.loadblockchain.Broker"

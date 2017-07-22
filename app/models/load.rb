@@ -1,5 +1,8 @@
-class Shipper
+class Load
   include Blockchainable
+  include Her::Model
+  collection_path 'api/Load'
+  primary_key :loadId
 
   def self.chain_klass
     "com.loadblockchain.Load"

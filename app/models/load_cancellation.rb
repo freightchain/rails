@@ -1,5 +1,7 @@
 class LoadCancellation
   include Blockchainable
+  include Her::Model
+  collection_path 'api/LoadCancellation'
 
   def self.chain_klass
     "com.loadblockchain.LoadCancellation"
