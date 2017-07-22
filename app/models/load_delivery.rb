@@ -1,10 +1,10 @@
-class LoadPickup
+class LoadDelivery
   include Blockchainable
   include Her::Model
-  collection_path 'api/LoadPickup'
+  collection_path 'api/LoadDelivery'
 
   def self.chain_klass
-    "com.loadblockchain.LoadPickup"
+    "com.loadblockchain.LoadDelivery"
   end
 
   def self.seed_data
