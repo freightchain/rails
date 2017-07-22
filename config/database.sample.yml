@@ -3,8 +3,8 @@ default: &default
   encoding: utf8
   pool: 5
   host: localhost
-  username: reid
-  password: password
+  username: jordan
+  password:
   port: 5432
 
 development:
