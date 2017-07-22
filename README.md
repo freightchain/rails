@@ -11,5 +11,5 @@ composer-rest-server -p hlfv1 -n freightchain -i PeerAdmin -s randomString -N ne
 Also
 
 ```
-composer network update
+composer network update -a ./dist/freightchain.bna -p hlfv1 -i PeerAdmin -s randomString
 ```
