@@ -1,4 +1,4 @@
-module Concerns::Blockchainable
+module Blockchainable
   extend ActiveSupport::Concern
 
   included do
