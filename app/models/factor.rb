@@ -13,7 +13,7 @@ class Factor
       {"$class" =>  chain_klass, factorId: '1', name: 'Advance Business Capital'},
       {"$class" =>  chain_klass, factorId: '2', name: 'Interstate Capital'},
       {"$class" =>  chain_klass, factorId: '3', name: 'Riveria Finance'},
-    ],
+    ]
   end
 
 end
