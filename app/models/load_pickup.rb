@@ -34,6 +34,16 @@ class LoadPickup
         "load" => "5",
         "occurredAt" => "2017-07-21T18:57:28.962Z",
       },
+      {
+        "$class" => chain_klass,
+        "load" => "8",
+        "occurredAt" => "2017-07-21T18:57:28.962Z",
+      },
+      {
+        "$class" => chain_klass,
+        "load" => "9",
+        "occurredAt" => "2017-07-21T18:57:28.962Z",
+      },
     ]
   end
 
