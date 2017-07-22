@@ -1,4 +1,4 @@
-Her::API.setup url: "http://localhost:3000" do |c|
+  Her::API.setup url: "http://localhost:3000" do |c|
   # Request
   c.use Faraday::Request::UrlEncoded
 
