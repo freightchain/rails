@@ -5,6 +5,5 @@ module Concerns::Blockchainable
   end
 
   module ClassMethods
-
   end
 end
