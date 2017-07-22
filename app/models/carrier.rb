@@ -8,6 +8,8 @@ class Carrier
       {name: 'Texas Van Lines', mc_number: '1236'},
       {name: 'Knight Transportation', mc_number: '1237'},
       {name: 'Atlas Van Lines', mc_number: '1238'},
+      {name: 'Fraudulent Carrier', mc_number: '1238'},
+      {name: 'Really Good Carrier', mc_number: '1238'},
     ]
   end
 
