@@ -8,6 +8,7 @@ module Blockchainable
 
     def sync
       seed_data.each do |datum|
+        print '.'
         create(datum)
       end
     end

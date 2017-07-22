@@ -1,0 +1,2 @@
+module Broker::LoadsHelper
+end
