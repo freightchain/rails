@@ -6,8 +6,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css" type="text/css" media="all" />
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdyNPLXZAJ0oFzBkol8qri9CZe3TJc2hw"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
-  <body>
+  <body onload="initMap()">
     <%= render 'shared/header' %>
     <div class="container">
       <%= yield %>
