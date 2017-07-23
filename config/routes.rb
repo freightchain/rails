@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   namespace :broker do
     resources :carriers
     resources :loads, only: [:show]
+    resources :map, only: [:index]
   end
 end
