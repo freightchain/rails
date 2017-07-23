@@ -4,6 +4,24 @@ class Load
   collection_path 'api/Load'
   # primary_key :loadId
 
+  def broker_o
+    Broker.all.to_a.select do |e|
+      e.brokerId == broker.split('#')[1]
+    end.first
+  end
+
+  def carrier_o
+    Carrier.all.to_a.select do |e|
+      e.carrierId == carrier.split('#')[1]
+    end.first
+  end
+
+  def shipper_o
+    Shipper.all.to_a.select do |e|
+      e.shipperId == shipper.split('#')[1]
+    end.first
+  end
+
   def self.chain_klass
     "com.loadblockchain.Load"
   end

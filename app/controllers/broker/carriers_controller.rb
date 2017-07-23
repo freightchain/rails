@@ -1,16 +1,15 @@
 class Broker::CarriersController < ApplicationController
+  helper_method :loads
+
   def index
   end
 
   def show
     @carrier = Carrier.find(params[:id])
-    @loads = []
-    @loads << Load.find(1)
-    @loads << Load.find(2)
-    @loads << Load.find(3)
-    @loads << Load.find(4)
-    @loads << Load.find(5)
-
-    @stats = ComposeStats.new({ loads: @loads})
+    @stats = ComposeStats.new({ loads: carrier.loads })
   end
+
+  private
+
+  attr_reader :carrier
 end

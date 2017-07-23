@@ -2,7 +2,12 @@ class Carrier
   include Blockchainable
   include Her::Model
   collection_path 'api/Carrier'
-  # primary_key :carrierId
+
+  def loads
+    Load.all.to_a.select do |e|
+      e.carrier.split('#')[1] == carrierId
+    end
+  end
 
   def self.chain_klass
     "com.loadblockchain.Carrier"
