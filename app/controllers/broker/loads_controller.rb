@@ -4,6 +4,8 @@ class Broker::LoadsController < ApplicationController
   helper_method :load
 
   def show
+    @load_rates = LoadRate.all.to_a
+    @load_rates.select {|lr| lr.load.scan(/\d/)[0] == @load.id }
   end
 
   private
