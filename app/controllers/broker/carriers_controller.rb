@@ -6,6 +6,7 @@ class Broker::CarriersController < ApplicationController
 
   def show
     @carrier = Carrier.find(params[:id])
+    @loads = @carrier.loads
     @stats = ComposeStats.new({ loads: carrier.loads })
   end
 
