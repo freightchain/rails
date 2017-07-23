@@ -10,5 +10,7 @@ class Broker::CarriersController < ApplicationController
     @loads << Load.find(3)
     @loads << Load.find(4)
     @loads << Load.find(5)
+
+    @stats = ComposeStats.new({ loads: @loads})
   end
 end
